@@ -1,5 +1,7 @@
 # Application Remake Spotify Mobile
 
+*Application développée dans le cadre du master ILSEN au CERI, Université d'Avignon*
+
 Projet Middleware Ice &amp; Soup : application de streaming musical basée sur une architecture distribuée, la librairie VLC et sur le middleware Ice, par Zeroc
 Gestion des serveurs effectuée au moyen d'IceGrid.
 
@@ -20,8 +22,6 @@ L'application permet également à l'utilisateur d'énoncer des commandes vocale
 - Front : Java, Android natif
 - Reconnaissance vocale : Google Speech to Text
 - Analyseur de requête : module python TextBlob, qui utilise notamment la classification de texte supervisé
-
-*Application développée dans le cadre du master ILSEN au CERI, Université d'Avignon*
 
 # Screenshots
 <p align="center">
