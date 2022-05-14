@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.application'
+    id "com.zeroc.gradle.ice-builder.slice" version "1.4.7"
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.spotifyceri"
+        minSdkVersion 30
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'com.zeroc:ice:3.7.4'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    //implementation 'org.videolan.android:libvlc-all:3.4.9'
+
+    // dependency for exoplayer
+
+    implementation 'com.google.android.exoplayer:exoplayer:r2.4.0'
+
+// for core support in exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:r2.4.0'
+
+// for adding dash support in our exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-dash:r2.4.0'
+
+// for adding hls support in exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-hls:r2.4.0'
+
+// for smooth streaming of video in our exoplayer.
+
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:r2.4.0'
+
+// for generating default ui of exoplayer
+
+    implementation 'com.google.android.exoplayer:exoplayer-ui:r2.4.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
